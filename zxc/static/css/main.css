@@ -1,0 +1,37 @@
+h1 {
+    color: #25cab0;
+    padding-left: 500px;
+}
+ .block1 {
+    height: 200px;
+    width: 200px;
+
+}
+h2
+{ color: #bf11d2;
+    font-size: 52px ;
+}
+div {
+    height: 290px;
+    width: 1905px;
+    overflow: auto;
+    padding-left: 0 px;
+    background: url(images/anime.jpg) repeat-x #ff3f3f;
+   }
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 200px;
+    background-color: #1bd635;
+}
+li a {
+    display: block;
+    color: #112ee2;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+li a:hover {
+    background-color: #555;
+    color: white;
+}

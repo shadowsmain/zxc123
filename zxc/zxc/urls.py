@@ -23,4 +23,5 @@ urlpatterns = [
     path('aboutme/', mainapp.aboutme),
     path('last/', mainapp.last),
     path('admin/', admin.site.urls),
+    path('secretpage/', mainapp.secretpage),
 ]

@@ -2,6 +2,11 @@ body {
     background-color: #ff3f3f;
 }
 
+.murder {
+
+    margin-left: 38%;
+}
+
 .vlad {
     height: 300px;
     width: 600px;
@@ -20,13 +25,15 @@ body {
     float: bottom;
     margin-top: 5px;
     padding-left: 855px;
+    font: 150% cursive;
 
 
 }
 
 h1 {
     color: #25cab0;
-    padding-left: 500px;
+    padding-left: 700px;
+    font: 150% cursive;
 }
  /*.block1 {
     height: 200px;

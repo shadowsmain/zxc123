@@ -1,37 +1,63 @@
+body {
+    background-color: #ff3f3f;
+}
+
+.vlad {
+    height: 300px;
+    width: 600px;
+    margin-left: 25%;
+}
+.dance {
+    height: 300px;
+    width: 600px;
+    margin-left: 25%;
+    float: left;
+}
+.main-menu {
+    background: url(img/anime.jpg) repeat-x #432b2b;
+    width: 1045px;
+    height: 300px;
+    float: bottom;
+    margin-top: 5px;
+    padding-left: 855px;
+
+
+}
+
 h1 {
     color: #25cab0;
     padding-left: 500px;
 }
- .block1 {
+ /*.block1 {
     height: 200px;
     width: 200px;
 
-}
+} */
 h2
-{ color: #bf11d2;
+{ color: #1f1f1f;
     font-size: 52px ;
 }
-div {
+/*div {
     height: 290px;
     width: 1905px;
     overflow: auto;
-    padding-left: 0 px;
-    background: url(images/anime.jpg) repeat-x #ff3f3f;
-   }
+   padding-left: 0 px;
+   background: url(img/anime.jpg) repeat-x #ff3f3f;
+   } */
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     width: 200px;
-    background-color: #1bd635;
+    background-color: #9935b0;
 }
 li a {
     display: block;
-    color: #112ee2;
+    color: #ffffff;
     padding: 8px 16px;
     text-decoration: none;
 }
 li a:hover {
-    background-color: #555;
+   background-color: #dc9fe3;
     color: white;
 }

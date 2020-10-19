@@ -12,5 +12,6 @@ def aboutme(request):
 def last(request):
     return render(request, 'mainapp/last.html')
 
+
 def secretpage(request):
     return render(request, 'mainapp/secretpage.html')

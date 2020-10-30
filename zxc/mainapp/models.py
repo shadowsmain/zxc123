@@ -11,7 +11,7 @@ class Category(models.Model):
         verbose_name = 'Категорию'
         verbose_name_plural = 'Категории'
 
-class fantasy(models.Model):
+class Fantasy(models.Model):
     category = models.ForeignKey(Category,
                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
@@ -29,7 +29,7 @@ class fantasy(models.Model):
         verbose_name_plural = 'Фэнтези'
 
 
-class shounen(models.Model):
+class Shounen(models.Model):
     category = models.ForeignKey(Category,
                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
@@ -46,7 +46,7 @@ class shounen(models.Model):
         verbose_name = 'Сёнэн'
         verbose_name_plural = 'Сёнэн'
 
-class cyberpank(models.Model):
+class Cyberpank(models.Model):
     category = models.ForeignKey(Category,
                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=128)
@@ -64,7 +64,7 @@ class cyberpank(models.Model):
         verbose_name_plural = 'Киберпанк'
 
 
-class thriller(models.Model):
+class Thriller(models.Model):
     category = models.ForeignKey(Category,
                                  on_delete=models.CASCADE)
     name = models.CharField(max_length=128)

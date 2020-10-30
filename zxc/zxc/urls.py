@@ -19,9 +19,10 @@ from django.urls import path
 
 
 urlpatterns = [
-    path('', mainapp.index),
-    path('aboutme/', mainapp.aboutme),
-    path('last/', mainapp.last),
+    path('', mainapp.index, name='index'),
+    path('aboutme/', mainapp.aboutme, name='aboutme'),
+    path('aboutme/category/<int:pk>/', mainapp.aboutme_page, name='aboutme_page'),
+    path('last/', mainapp.last, name='last'),
+    path('secretpage/', mainapp.secretpage, name='secret'),
     path('admin/', admin.site.urls),
-    path('secretpage/', mainapp.secretpage),
 ]

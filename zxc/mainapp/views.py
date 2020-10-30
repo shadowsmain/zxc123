@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-from mainapp.models import Category
+from mainapp.models import Category, Fantasy
 
 
 
@@ -23,3 +23,11 @@ def last(request):
 
 def secretpage(request):
     return render(request, 'mainapp/secretpage.html')
+
+def aboutme_page(request, pk):
+    board = Category.objects.filter(category_id=pk)
+    context = {
+        'Fantasy': Fantasy,
+        'page_title': 'страница каталога'
+    }
+    return render(request, 'mainapp/aboutme_page.html', context)

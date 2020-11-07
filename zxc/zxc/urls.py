@@ -15,7 +15,7 @@ Including another URLconf
 """
 import mainapp.views as mainapp
 from django.contrib import admin
-from django.urls import path
+from django.urls import path, include
 
 
 urlpatterns = [
@@ -24,5 +24,6 @@ urlpatterns = [
     path('aboutme/category/<int:pk>/', mainapp.aboutme_page, name='aboutme_page'),
     path('last/', mainapp.last, name='last'),
     path('secretpage/', mainapp.secretpage, name='secret'),
+    path('auth/', include('authapp.urls', namespace='auth')),
     path('admin/', admin.site.urls),
 ]

@@ -1,7 +1,7 @@
 from django.shortcuts import render
 
 
-from mainapp.models import Category, Fantasy
+from mainapp.models import Category, Fantasy, Course
 
 
 
@@ -12,20 +12,25 @@ def index(request):
 def aboutme(request):
     categories = Category.objects.all()
     context = {
-        'categories': categories
+        'categories': categories,
     }
     return render(request, 'mainapp/aboutme.html', context)
 
 
-def last(request):
-    return render(request, 'mainapp/last.html')
+def last(request, pk):
+    course = Category.objects.fliter(category_id=pk)
+    context = {
+       'course': course,
+        'page_title':'страница каталога'
+    }
+    return render(request, 'mainapp/last.html', context)
 
 
 def secretpage(request):
     return render(request, 'mainapp/secretpage.html')
 
 def aboutme_page(request, pk):
-    board = Category.objects.filter(category_id=pk)
+    course = Category.objects.filter(category_id=pk)
     context = {
         'Fantasy': Fantasy,
         'page_title': 'страница каталога'

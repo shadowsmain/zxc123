@@ -18,7 +18,7 @@ def aboutme(request):
 
 
 def last(request, pk):
-    course = Category.objects.fliter(category_id=pk)
+    course = Course.objects.fliter(course_id=pk)
     context = {
        'course': course,
         'page_title':'страница каталога'

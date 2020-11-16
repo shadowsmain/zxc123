@@ -22,9 +22,10 @@ urlpatterns = [
     path('', mainapp.index, name='index'),
     path('aboutme/', mainapp.aboutme, name='aboutme'),
     path('aboutme/category/<int:pk>/', mainapp.aboutme_page, name='aboutme_page'),
-    path('last/<int:pk>/', mainapp.last, name='last'),
+    path('last/<int:category_pk>/', mainapp.last, name='last'),
     path('secretpage/', mainapp.secretpage, name='secret'),
     path('auth/', include('authapp.urls', namespace='auth')),
-    path('auth/', include('basketapp.urls', namespace='basket')),
+    path('last/', include('basketapp.urls', namespace='basket')),
     path('admin/', admin.site.urls),
+
 ]

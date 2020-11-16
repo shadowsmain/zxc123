@@ -6,7 +6,11 @@
     <div class="murder">
         <p><a href="/secretpage/"><img src="\static\css\img\vlad.jpg" width="500px" height="300px"></a></p>
     </div>
-    <a href="{% url 'basket:add' course_id %}">
-        приобрести
+  <a href="{% url 'basket:remove' item.pk %}"
+
+        удалить
     </a>
 {% endblock %}
+
+
+

@@ -26,6 +26,7 @@ urlpatterns = [
     path('secretpage/', mainapp.secretpage, name='secret'),
     path('auth/', include('authapp.urls', namespace='auth')),
     path('last/', include('basketapp.urls', namespace='basket')),
+    path('basket/', include('basketapp.urls', namespace='basket')),
     path('admin/', admin.site.urls),
 
 ]

@@ -13,6 +13,9 @@
 {#                    <a href="#"> {{ item }} </a>#}
                 </li>
             </ul>
+            <a href="{% url 'basket:add' course_id %}">
+                Записаться
+            </a>
         {% endfor %}
     </div>
 

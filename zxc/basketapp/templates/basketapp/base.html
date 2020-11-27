@@ -21,13 +21,6 @@
         <li>
             <a href="/last/">Feedback</a>
         </li>
-        <li>
-        {% if user.is_authenticated%}
-                <a href="{% url 'auth:logout' %}">Logout</a>
-            {% else %}
-                <a href="{% url 'auth:login' %}">Login</a>
-            {% endif %}
-        </li>
     </ul>
 </div>
 {% block content %}

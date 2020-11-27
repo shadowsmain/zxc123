@@ -6,11 +6,15 @@
     <div class="murder">
         <p><a href="/secretpage/"><img src="\static\css\img\vlad.jpg" width="500px" height="300px"></a></p>
     </div>
-  <a href="{% url 'basket:remove' item.pk %}"
+    <ul>
+        {% for item in object_list %}
+            <li>
+                {{ item.to_html|safe }}
+                <a href="{% url 'basket:remove' item.pk %}">
+                    удалить
+                </a>
+            </li>
+        {% endfor %}
+    </ul>
 
-        удалить
-    </a>
 {% endblock %}
-
-
-

@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'mainapp',
+    'officeapp',
 ]
 
 MIDDLEWARE = [
@@ -122,4 +123,5 @@ STATIC_URL = '/static/'
 STATICFILES_DIRS = (
     'static',
     'authapp',
+    'officeapp',
 )

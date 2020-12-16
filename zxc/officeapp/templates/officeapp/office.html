@@ -1,0 +1,17 @@
+{% extends 'officeapp/base.html' %}
+
+{% block content %}
+
+<div class="main-block">
+    <h1 style="color: white;">Offices:</h1>
+    <ul>
+        {% for item in offices %}
+            <li>
+                <a href="#">{{ item }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}

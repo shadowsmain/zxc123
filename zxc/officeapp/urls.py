@@ -4,5 +4,5 @@ from django.urls import path
 app_name = 'officeapp'
 
 urlpatterns = [
-    path('', officeapp.student, name='office'),
+    path('', officeapp.office, name='office'),
 ]

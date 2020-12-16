@@ -26,5 +26,5 @@ urlpatterns = [
     path('secretpage/', mainapp.secretpage, name='secret'),
     path('auth/', include('authapp.urls', namespace='auth')),
     path('admin/', admin.site.urls),
-    path ('office/' include('officeapp.urls', namespace='office')),
+    path('office/', include('officeapp.urls', namespace='office')),
 ]

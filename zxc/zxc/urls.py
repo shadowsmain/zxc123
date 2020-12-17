@@ -27,4 +27,5 @@ urlpatterns = [
     path('auth/', include('authapp.urls', namespace='auth')),
     path('admin/', admin.site.urls),
     path('office/', include('officeapp.urls', namespace='office')),
+    path('book/', include('bookapp.urls', namespace='book')),
 ]

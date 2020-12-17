@@ -39,6 +39,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'mainapp',
     'officeapp',
+    'bookapp',
 ]
 
 MIDDLEWARE = [
@@ -124,4 +125,5 @@ STATICFILES_DIRS = (
     'static',
     'authapp',
     'officeapp',
+    'bookapp',
 )

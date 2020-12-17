@@ -1,3 +1,13 @@
-from django.shortcuts import render
+from django.shortcuts import import render
 
-# Create your views here.
+from bookapp.models import Book
+
+
+def book(request):
+    books = Book.objects.all()
+    context = {
+        'books': books,
+        'page_title': 'книги',
+    }
+
+    return render(request, 'bookapp/book.html', context)

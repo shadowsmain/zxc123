@@ -1,4 +1,4 @@
-from django.shortcuts import import render
+from django.shortcuts import render
 
 from bookapp.models import Book
 

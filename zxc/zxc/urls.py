@@ -29,5 +29,6 @@ urlpatterns = [
     path('office/', include('officeapp.urls', namespace='office')),
     path('book/', include('bookapp.urls', namespace='book')),
     path('neoclassica/', include('neoclassicaapp.urls', namespace='neoclassica')),
+    path('country/', include('countryapp.urls', namespace='country')),
 ]
 #neoclassicaapp

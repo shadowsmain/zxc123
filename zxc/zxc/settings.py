@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'officeapp',
     'bookapp',
     'neoclassicaapp',
+    'countryapp',
 ]
 
 MIDDLEWARE = [
@@ -128,4 +129,5 @@ STATICFILES_DIRS = (
     'officeapp',
     'bookapp',
     'neoclassicaapp',
+    'countryapp',
 )

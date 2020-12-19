@@ -28,4 +28,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('office/', include('officeapp.urls', namespace='office')),
     path('book/', include('bookapp.urls', namespace='book')),
+    path('neoclassica/', include('neoclassicaapp.urls', namespace='neoclassica')),
 ]
+#neoclassicaapp

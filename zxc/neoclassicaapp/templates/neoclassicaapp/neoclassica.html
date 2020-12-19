@@ -1,0 +1,17 @@
+{% extends 'neoclassicaapp/base.html' %}
+
+{% block content %}
+
+<div class="main-block">
+    <h1 style="color: white;">Neoclassics:</h1>
+    <ul>
+        {% for item in neoclassics %}
+            <li>
+                <a href="#">{{ item }}</a>
+            </li>
+        {% endfor %}
+    </ul>
+
+</div>
+
+{% endblock %}
